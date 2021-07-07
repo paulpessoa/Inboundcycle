@@ -12,4 +12,4 @@ Se trata de una maquetación de una página sencilla a partir de un diseño (arc
 
 ## LandingPage Preview (click on the image)
 
-<a href="https://#" target="_blank"><img src="/Designer/Landing-Page.jpg" alt="Landing Page Preview"/></a>
+<a href="https://inboundcycle.vercel.app/" target="_blank"><img src="/Design/Landing%20Page.jpg" alt="Landing Page Preview"/></a>
