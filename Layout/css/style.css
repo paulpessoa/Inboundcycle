@@ -1,0 +1,25 @@
+/* Importing fonts*/
+@font-face {
+    font-family: inboundcycle;
+    src: local("inboundcycle"),
+        url(../fonts/helveticaneue-medium.ttf) format("truetype"), 
+        url(../fonts/myriad-pro-regular.ttf) format("truetype");
+  }
+  
+  /* ------ css reset ------ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none; 
+    font-family: "inboundcycle";
+}
+
+/* 
+size-desktop: 1280px
+size-tablet: 960px     
+size-phone: 768px
+*/
+
+
