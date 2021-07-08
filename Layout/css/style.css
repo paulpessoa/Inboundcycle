@@ -7,6 +7,7 @@
   }
   
   /* ------ css reset ------ */
+  /* size-desktop: 1280px - padding side 60px */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -20,13 +21,7 @@ body {
     border-top: 5px solid #ED5900;
 }
 
-/* 
-    size-desktop: 1280px - padding side 60px
-    size-tablet: 1000px     
-    size-phone: 768px
-*/
-
-/* -------- header style -------- */
+/* ------------ header style ------------ */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +35,6 @@ header {
 
 ul.social-icons {
     display: flex;
-  
 }
 i.fa {
     font-size: 20px;
@@ -72,7 +66,7 @@ i.fa:hover {
     background-color: rgba(0, 0, 0, 0.05);
     z-index: 1;
 }
-/* start of phone styles */
+/* phone styles */
 @media screen and (max-width: 479px) {
     header {
         justify-content: center;
@@ -81,7 +75,7 @@ i.fa:hover {
     }
 }
 
-/* -------- section style -------- */
+/* ------------ section main style ------------ */
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -90,7 +84,6 @@ i.fa:hover {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    
 }
 section {
     width: 100%;
@@ -153,7 +146,7 @@ section p a:hover {
     transform: scale(1.05);  
 }
 
-/*  styles */
+/* tablet styles */
 @media (min-width: 768px) and (max-width: 1024px) {
     section img  {
         margin-top: -120px;
@@ -164,7 +157,6 @@ section p a:hover {
     section h1 {
         font-size: 24px;
         width: 100%;
-
     }
     section h2 {
         font-size: 20px;
@@ -175,14 +167,9 @@ section p a:hover {
         width: 100%;
         text-align: justify;
         padding: 0px;
-     
     }
-    .emphasizes {
-
-    }
-
 }
-/*  styles */
+/*  phone styles */
 @media screen and (max-width: 767px) {
     .wrapper {
         padding: 6%;
@@ -214,26 +201,9 @@ section p a:hover {
         padding: 0px;
         line-height: 1.5rem;
     }
-    .emphasizes {
-        text-align: center;
-        font-size: 16px;       
-    }
-}
-/*  styles */
-@media screen and (max-width: 479px) {
-    
 }
 
-
-
-
-
-
-
-
-/* -------- aside style -------- */
-
-
+/* ------------ aside form style ------------ */
 aside {
     float: right;
     padding: 10px; 
@@ -258,8 +228,7 @@ aside form fieldset {
 }
 aside form fieldset:nth-child(2n-1) {
     padding-bottom: 20px;
-    padding-top: 10px;
-    
+    padding-top: 10px;   
 }
 aside form fieldset input[type=text],
 aside form fieldset input[type=email] {
@@ -268,12 +237,10 @@ aside form fieldset input[type=email] {
     border: 1px solid #c7c7c7;
     margin: 8px 0px;
 }
-
 aside form fieldset input::placeholder {
     color: #c7c7c7;
 }
-
-aside form fieldset label{
+ form fieldset label{
     font-size: 14px;
     display: block;
     line-height: 28px;
@@ -286,7 +253,6 @@ aside form fieldset label a:hover {
     text-decoration: underline;
     color: #ff6c11;
 }
-
 aside form button{
     background-color: #ED5900;
     border: none;
@@ -302,6 +268,10 @@ aside form button:hover{
     background-color: #ff6c11;
     transform: scale(0.98);
 }
+
+
+
+
 /*  styles */
 @media screen and (max-width: 1024px) {
    
@@ -317,7 +287,8 @@ aside form button:hover{
 
 
 
-/* -------- footer style -------- */
+
+/* ------------ footer style ------------ */
 footer {
     padding: 0 60px; 
     background-color: #4F4F51;
@@ -355,7 +326,7 @@ footer {
     color: #ff6c11;
 }
 
-/* start of medium tablet styles */
+/* large phone styles */
 @media screen and (max-width: 768px) {   
     .footer-frame {
         display: flex;
@@ -368,7 +339,7 @@ footer {
         margin-bottom: 10px;
     }
 }
-/* start of phone styles */
+/* phone styles */
 @media screen and (max-width: 479px) {
     .footer-frame nav ul li {
         display: block;
@@ -378,7 +349,6 @@ footer {
         margin: 0px;
     }
 }
-/* ending footer style */
 
 
 
@@ -398,17 +368,3 @@ footer {
 
 
 
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-    /* start of medium tablet styles */
-    
-    }
-    
-    @media screen and (max-width: 479px) {
-     
-    }
