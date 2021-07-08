@@ -49,7 +49,8 @@ i.fa {
     transition: 0.2s ease;
 }
 i.fa:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: #ff6c11;
 }
 .separator-image {
     background-image: url(../img/separator-image.jpg);
@@ -111,7 +112,7 @@ section img  {
     transition: 0.2s ease;
 }
 section img:hover  {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -143,6 +144,7 @@ section p a {
 
 section p a:hover {
     text-decoration: underline;
+    color: #ff6c11;
 }
 
 .emphasizes {
@@ -153,19 +155,13 @@ section p a:hover {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 .emphasizes:hover {
     cursor: pointer;
     transform: scale(1.05);
+    
 }
-
-
-
-
-
-
-
 
 
 
@@ -182,13 +178,11 @@ aside {
     width: 30%;
     padding: 10px;
 }
-
 aside form {
     background-color: #e7e7e7;
     border: 0px;
     padding: 32px;
 }
-
 aside form h3 {
     color:#ED5900;
     text-transform: uppercase;
@@ -197,11 +191,9 @@ aside form h3 {
     font-weight: 600;
     margin-bottom: 20px;
 }
-
 aside form fieldset {
     border: 0px;
 }
-
 aside form fieldset:nth-child(2n-1) {
     padding-bottom: 20px;
     padding-top: 10px;
@@ -225,6 +217,13 @@ aside form fieldset label{
     line-height: 28px;
     color:#5c5c5c;
 }
+aside form fieldset label a{
+    color:#ED5900;
+}
+aside form fieldset label a:hover {
+    text-decoration: underline;
+    color: #ff6c11;
+}
 
 aside form button{
     background-color: #ED5900;
@@ -239,7 +238,7 @@ aside form button{
 aside form button:hover{
     cursor: pointer;
     background-color: #ff6c11;
-    transform: scale(0.99);
+    transform: scale(0.98);
 }
 
 
@@ -281,7 +280,7 @@ footer {
     transition: 0.2s ease;
 }
 .footer-frame nav ul li a:hover {
-    color: #ED5900;
+    color: #ff6c11;
 }
 
 /* start of medium tablet styles */
