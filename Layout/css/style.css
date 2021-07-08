@@ -32,7 +32,6 @@ header {
     margin: 0 auto; 
     padding: 0 60px;  
 }
-
 header a img {
     transition: 0.2s ease;
 }
@@ -147,13 +146,11 @@ section p a:hover {
 }
 .emphasizes a {
     color: #ED5900;
-
 }
 .emphasizes:hover {
     cursor: pointer;
     transform: scale(1.05);  
 }
-
 /* tablet styles */
 @media (min-width: 768px) and (max-width: 1024px) {
     section img  {
@@ -281,25 +278,6 @@ aside form button:hover{
     transform: scale(0.98);
 }
 
-
-
-
-/*  styles */
-@media screen and (max-width: 1024px) {
-   
-}
-/*  styles */
-@media screen and (max-width: 767px) {
-
-}
-/*  styles */
-@media screen and (max-width: 479px) {
- 
-}
-
-
-
-
 /* ------------ footer style ------------ */
 footer {
     padding: 0 60px; 
@@ -343,7 +321,6 @@ footer {
 .footer-frame nav ul li a:hover {
     color: #ff6c11;
 }
-
 /* large phone styles */
 @media screen and (max-width: 768px) {   
     .footer-frame {
@@ -368,18 +345,7 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
-
 /* ---------------------- thanks popup ---------------------- */
-
-
 .BlockUIConfirm {
     display: none;
 	position: fixed;
@@ -410,22 +376,11 @@ footer {
     border-top: 5px solid #ED5900;
     padding: 40px;
 }
-
 .caption i{
     float: right;
     cursor: pointer;
 }
-
 .caption p {
     line-height: 40px;
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
