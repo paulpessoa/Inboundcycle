@@ -6,6 +6,7 @@
   <title>InboundCycle</title>
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -53,18 +54,18 @@
     <!-- Aside -->
     <aside>
       <!-- Download form -->
-      <form action="post">
+      <form id="book-form" action="POST">
         <h3>Descargar e-book gratis</h3>
         <fieldset>
-          <input type="text" name="name" placeholder="Nombre" id="name">
+          <input type="text" name="name" placeholder="Nombre" id="name" required>
           <input type="text" name="surname" placeholder="Apellidos">
-          <input type="email" name="email"  placeholder="E-mail" required>
+          <input type="email" name="email"  placeholder="E-mail" >
         </fieldset>
         <fieldset>
-          <label><input type="checkbox" name="legal" required> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
+          <label><input type="checkbox" name="legal"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
           <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
         </fieldset>
-        <button type="submit">Descargar</button>
+        <button type="submit" onclick="ConfirmForm();" id="submitform">Descargar</button>
       </form>
     </aside>
   </div>
@@ -89,13 +90,16 @@
     </div>
   </footer>
   <!-- Pop-up -->
-<!--
-  <div class="popup">
+
+<div id="BlockUIConfirm" class="BlockUIConfirm">
+  <div class="popup" onclick="Submit();"></div>
     <div class="caption">
-      <i class="fa fa-times"></i>
+      <i class="fa fa-times" onclick="Submit();"></i>
       <p>¡Muchas gracias!</p>
+      <small>Enviamos una copia por correo electrónico.</small>
     </div>
   </div>
--->
+</div>
+
 <script src="./js/main.js"></script>
 </body>

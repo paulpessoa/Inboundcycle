@@ -33,6 +33,13 @@ header {
     padding: 0 60px;  
 }
 
+header a img {
+    transition: 0.2s ease;
+}
+header a img:hover {
+    transform: scale(1.03);
+}
+
 ul.social-icons {
     display: flex;
 }
@@ -140,6 +147,7 @@ section p a:hover {
 }
 .emphasizes a {
     color: #ED5900;
+
 }
 .emphasizes:hover {
     cursor: pointer;
@@ -172,7 +180,7 @@ section p a:hover {
 /*  phone styles */
 @media screen and (max-width: 767px) {
     .wrapper {
-        padding: 6%;
+        padding: 8%;
     }   
     section {
         text-align: center;
@@ -200,6 +208,10 @@ section p a:hover {
         font-size: 16px;
         padding: 0px;
         line-height: 1.5rem;
+    }
+    .emphasizes {
+        padding-right: 6%;
+        padding-left: 6%;
     }
 }
 
@@ -304,6 +316,12 @@ footer {
     align-items: center;
     color: #fff;
 }
+.footer-frame a img {
+    transition: 0.2s ease;
+}
+.footer-frame a img:hover {
+    transform: scale(1.03);
+}
 .footer-frame nav {
     display: flex;
     flex-wrap: wrap;
@@ -359,6 +377,49 @@ footer {
 
 
 
+/* ---------------------- thanks popup ---------------------- */
+
+
+.BlockUIConfirm {
+    display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 50;
+}
+.popup {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	opacity: 0.4;
+}
+.caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 400px;
+	opacity: 1;
+	background-color: white;
+    border-top: 5px solid #ED5900;
+    padding: 40px;
+}
+
+.caption i{
+    float: right;
+    cursor: pointer;
+}
+
+.caption p {
+    line-height: 40px;
+    font-size: 20px;
+}
 
 
 
