@@ -64,10 +64,10 @@
         <fieldset>
           <input type="text" name="name" placeholder="Nombre">
           <input type="text" name="surname" placeholder="Apellidos">
-          <input type="email" name="email"  placeholder="E-mail">
+          <input type="email" name="email"  placeholder="E-mail" required>
         </fieldset>
         <fieldset>
-          <label><input type="checkbox" name="legal"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
+          <label><input type="checkbox" name="legal" required> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
           <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
         </fieldset>
         <button type="submit">Descargar</button>
@@ -86,7 +86,7 @@
 
         <ul>
           <!-- Copyright -->
-          <small>InboundCycle © 2015</small>
+          <small>InboundCycle © <span id="year">2015</span></small>
           <li><a href="#" title="Lea nuestra política de privacidad">Política de Privacidad</a></li>
           <li><a href="#" title="Lea el aviso legal">Aviso Legal</a></li>
         </ul>
@@ -107,5 +107,5 @@
     </div>
   </div>
 -->
-
+<script src="./js/main.js"></script>
 </body>

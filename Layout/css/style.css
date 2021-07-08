@@ -157,7 +157,7 @@ section p a:hover {
 }
 .emphasizes:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
@@ -201,7 +201,14 @@ aside form h3 {
 aside form fieldset {
     border: 0px;
 }
-aside form fieldset input {
+
+aside form fieldset:nth-child(2n-1) {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    
+}
+aside form fieldset input[type=text],
+aside form fieldset input[type=email] {
     width: 100%;
     padding: 10px;
     border: 1px solid #c7c7c7;
@@ -210,22 +217,29 @@ aside form fieldset input {
 
 aside form fieldset input::placeholder {
     color: #c7c7c7;
-    width: 100%;
 }
 
 aside form fieldset label{
-    font-size: 10px;
+    font-size: 14px;
+    display: block;
+    line-height: 28px;
+    color:#5c5c5c;
 }
 
 aside form button{
     background-color: #ED5900;
     border: none;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
-    font-weight: 600;
     width: 100%;
+    transition: 0.2s ease;
+}
+aside form button:hover{
+    cursor: pointer;
+    background-color: #ff6c11;
+    transform: scale(0.99);
 }
 
 
