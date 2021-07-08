@@ -47,14 +47,14 @@ ul.social-icons {
 }
 
 i.fa {
-    font-size: 30px;
+    font-size: 20px;
     margin: 5px;
     color: #ED5900;
     transition: 0.2s ease;
 }
 
 i.fa:hover {
-    color: #ff7824;
+    transform: scale(1.2);
 }
 
 .separator-image {
@@ -63,4 +63,13 @@ i.fa:hover {
     height: 148px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px; 
+    }
 }
