@@ -15,6 +15,9 @@
     list-style: none; 
     font-family: "inboundcycle";
 }
+body {
+    justify-items: center;
+}
 
 /* 
     size-desktop: 1280px - padding side 60px
@@ -22,10 +25,7 @@
     size-phone: 768px
 */
 
-body {
-    justify-items: center;
-}
-
+/* -------- starting header style -------- */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -37,26 +37,18 @@ header {
     padding: 0 60px;  
 }
 
-.logotype {
-    max-width: 277px;
-    max-height: 38px;
-}
-
 ul.social-icons {
     display: flex;  
 }
-
 i.fa {
     font-size: 20px;
     margin: 5px;
     color: #ED5900;
     transition: 0.2s ease;
 }
-
 i.fa:hover {
     transform: scale(1.2);
 }
-
 .separator-image {
     background-image: url(../img/separator-image.jpg);
     width: 100%;
@@ -64,12 +56,120 @@ i.fa:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-@media screen and (max-width: 768px) {
+/* start of phone styles */
+@media screen and (max-width: 479px) {
     header {
         justify-content: center;
         flex-direction: column;
         padding: 0px; 
     }
 }
+/* ending header style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------- starting footer style -------- */
+footer {
+    padding: 0 60px; 
+    background-color: #4F4F51;
+}
+.footer-frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    height: 160px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto; 
+    align-items: center;
+    color: #fff;
+}
+.footer-frame nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer-frame nav ul li {
+    border-left: 1px #7a7a7a solid;
+    display: inline-flex;
+    margin-left: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+.footer-frame nav ul li a {
+    color: #fff;
+    font-size: small;
+    transition: 0.2s ease;
+}
+.footer-frame nav ul li a:hover {
+    color: #ED5900;
+}
+
+/* start of medium tablet styles */
+@media screen and (max-width: 767px) {   
+    .footer-frame {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;                     
+    }
+    .footer-frame a img {
+        margin-bottom: 10px;
+    }
+}
+/* start of phone styles */
+@media screen and (max-width: 479px) {
+    .footer-frame nav ul li {
+        display: block;
+        justify-content: space-around;
+        border-left: none;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+/* ending footer style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    
+    }
+    
+    @media screen and (max-width: 479px) {
+     
+    }
