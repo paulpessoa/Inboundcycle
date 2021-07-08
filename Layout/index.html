@@ -3,9 +3,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>InboundCycle</title>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./img/inboundcyclefavicon.png" />
+  <!--SEO tags-->
+  <meta name="description" content="Desde el 2011, InboundCycle fue la primera agencia de inbound marketing de España y Latinoamérica.">
+  <meta name="author" content="Paul Pessoa">
+  <meta name="keywords" content="IndoundCycle, Agencia de Inbound Marketing, HubSpot Agency"/>
+  
+  <meta property="og:url" content="https://inboundcycle.vercel.app/"/> 
+  <meta property="og:title" content="IndoundCycle"/> 
+  <meta property="og:image" content="./img/inboundcycle.png"/> 
+  <meta property="og:description" content="Desde el 2011, InboundCycle fue la primera agencia de inbound marketing de España y Latinoamérica."/> 
+  
+  
+  <title>InboundCycle - Agencia de Inbound Marketing</title>
   <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!--JQuery CDN link-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -57,12 +71,12 @@
       <form id="book-form" action="POST">
         <h3>Descargar e-book gratis</h3>
         <fieldset>
-          <input type="text" name="name" placeholder="Nombre" id="name" required>
+          <input type="text" name="name" placeholder="Nombre" id="name">
           <input type="text" name="surname" placeholder="Apellidos">
-          <input type="email" name="email"  placeholder="E-mail" >
+          <input type="email" name="email"  placeholder="E-mail" required>
         </fieldset>
         <fieldset>
-          <label><input type="checkbox" name="legal"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
+          <label><input type="checkbox" name="legal" required> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
           <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
         </fieldset>
         <button type="submit" onclick="ConfirmForm();" id="submitform">Descargar</button>
@@ -90,16 +104,14 @@
     </div>
   </footer>
   <!-- Pop-up -->
-
-<div id="BlockUIConfirm" class="BlockUIConfirm">
-  <div class="popup" onclick="Submit();"></div>
-    <div class="caption">
-      <i class="fa fa-times" onclick="Submit();"></i>
-      <p>¡Muchas gracias!</p>
-      <small>Enviamos una copia por correo electrónico.</small>
-    </div>
+  <div id="BlockUIConfirm" class="BlockUIConfirm">
+    <div class="popup" onclick="Submit();"></div>
+      <div class="caption">
+        <i class="fa fa-times" onclick="Submit();"></i>
+        <p>¡Muchas gracias!</p>
+        <small>Enviamos una copia por correo electrónico.</small>
+      </div>
   </div>
-</div>
-
+<!-- Scripts JS and Jquery -->
 <script src="./js/main.js"></script>
 </body>
