@@ -17,6 +17,7 @@
 }
 body {
     justify-items: center;
+    border-top: 5px solid #ED5900;
 }
 
 /* 
@@ -25,7 +26,7 @@ body {
     size-phone: 768px
 */
 
-/* -------- starting header style -------- */
+/* -------- header style -------- */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +39,8 @@ header {
 }
 
 ul.social-icons {
-    display: flex;  
+    display: flex;
+  
 }
 i.fa {
     font-size: 20px;
@@ -55,7 +57,22 @@ i.fa:hover {
     height: 148px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 0.6;
 }
+.separator-image:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+
 /* start of phone styles */
 @media screen and (max-width: 479px) {
     header {
@@ -64,7 +81,84 @@ i.fa:hover {
         padding: 0px; 
     }
 }
-/* ending header style */
+
+/* -------- section style -------- */
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px; 
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px; 
+}
+
+
+section {
+    width: 70%;
+}
+
+
+section img  {
+    float: right;
+    margin-top: -90px;
+    margin-right: 80px;
+    max-width: 290px;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    transition: 0.2s ease;
+}
+section img:hover  {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+section h1 {
+    color: #ED5900;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+section h2 {
+    margin: 95px 0px 44px 0px;
+    width: 50%;
+    color: #a8a8a8;
+    font-weight: normal;
+}
+
+section p {
+    color:#5c5c5c;
+    font-size: 14px;
+    padding-right: 26px;
+    line-height: 1.5rem;
+}
+
+section p a {
+    color:#ED5900;
+    transition: 0.3s ease;
+}
+
+section p a:hover {
+    text-decoration: underline;
+}
+
+.emphasizes {
+    margin-top: 50px;
+    color: #ED5900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.emphasizes:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 
 
@@ -78,7 +172,23 @@ i.fa:hover {
 
 
 
-/* -------- starting footer style -------- */
+
+
+
+/* -------- aside style -------- */
+
+
+aside {
+    background-color: green;
+    width: 30%;
+}
+
+
+
+
+
+
+/* -------- footer style -------- */
 footer {
     padding: 0 60px; 
     background-color: #4F4F51;
