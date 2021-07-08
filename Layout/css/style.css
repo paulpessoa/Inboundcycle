@@ -22,7 +22,7 @@ body {
 
 /* 
     size-desktop: 1280px - padding side 60px
-    size-tablet: 960px     
+    size-tablet: 1000px     
     size-phone: 768px
 */
 
@@ -72,8 +72,6 @@ i.fa:hover {
     background-color: rgba(0, 0, 0, 0.05);
     z-index: 1;
 }
-
-
 /* start of phone styles */
 @media screen and (max-width: 479px) {
     header {
@@ -84,23 +82,21 @@ i.fa:hover {
 }
 
 /* -------- section style -------- */
-
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px; 
+    justify-content: center;
+    padding: 60px 60px 0px 60px; 
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    padding: 60px; 
+    
 }
-
-
 section {
-    width: 70%;
+    width: 100%;
+    max-width: 820px;
+    justify-content: center;
 }
-
-
 section img  {
     float: right;
     margin-top: -90px;
@@ -115,41 +111,33 @@ section img:hover  {
     transform: scale(1.05);
     cursor: pointer;
 }
-
-
 section h1 {
     color: #ED5900;
     font-size: 32px;
     font-weight: 600;
 }
-
 section h2 {
-    margin: 95px 0px 44px 0px;
+    margin: 50px 0px 44px 0px;
     width: 50%;
     color: #a8a8a8;
     font-weight: normal;
 }
-
 section p {
     color:#5c5c5c;
     font-size: 14px;
     padding-right: 26px;
     line-height: 1.5rem;
 }
-
 section p a {
     color:#ED5900;
     transition: 0.3s ease;
 }
-
 section p a:hover {
     text-decoration: underline;
     color: #ff6c11;
 }
-
 .emphasizes {
-    margin-top: 50px;
-    color: #ED5900;
+    padding: 60px 0px;
     text-transform: uppercase;
     text-align: center;
     font-size: 16px;
@@ -157,12 +145,84 @@ section p a:hover {
     cursor: pointer;
     transition: 0.2s ease;
 }
+.emphasizes a {
+    color: #ED5900;
+}
 .emphasizes:hover {
     cursor: pointer;
-    transform: scale(1.05);
-    
+    transform: scale(1.05);  
 }
 
+/*  styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    section img  {
+        margin-top: -120px;
+        margin-right: 0px;
+        max-width: 250px;
+        width: 100%;
+    }
+    section h1 {
+        font-size: 24px;
+        width: 100%;
+
+    }
+    section h2 {
+        font-size: 20px;
+        margin-top: 40px;
+        width: 100%;
+    }
+    section p {
+        width: 100%;
+        text-align: justify;
+        padding: 0px;
+     
+    }
+    .emphasizes {
+
+    }
+
+}
+/*  styles */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        padding: 6%;
+    }   
+    section {
+        text-align: center;
+    }
+    section img  {
+        float:none;
+        margin-top: -120px;
+        margin-right: 0px;
+    }
+    section h1 {
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    section h2 {
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    section p {
+        width: 100%;
+        text-align: justify;
+        font-size: 16px;
+        padding: 0px;
+        line-height: 1.5rem;
+    }
+    .emphasizes {
+        text-align: center;
+        font-size: 16px;       
+    }
+}
+/*  styles */
+@media screen and (max-width: 479px) {
+    
+}
 
 
 
@@ -175,10 +235,12 @@ section p a:hover {
 
 
 aside {
-    width: 30%;
-    padding: 10px;
+    float: right;
+    padding: 10px; 
 }
 aside form {
+    width: 100%;
+    width: 320px;
     background-color: #e7e7e7;
     border: 0px;
     padding: 32px;
@@ -240,8 +302,18 @@ aside form button:hover{
     background-color: #ff6c11;
     transform: scale(0.98);
 }
+/*  styles */
+@media screen and (max-width: 1024px) {
+   
+}
+/*  styles */
+@media screen and (max-width: 767px) {
 
-
+}
+/*  styles */
+@media screen and (max-width: 479px) {
+ 
+}
 
 
 
@@ -284,7 +356,7 @@ footer {
 }
 
 /* start of medium tablet styles */
-@media screen and (max-width: 767px) {   
+@media screen and (max-width: 768px) {   
     .footer-frame {
         display: flex;
         flex-direction: column;
@@ -332,7 +404,7 @@ footer {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     /* start of medium tablet styles */
     
     }
